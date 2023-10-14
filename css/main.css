@@ -1,0 +1,1130 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#2d737ac2;
+    box-sizing:border-box;
+}
+
+.contain{
+    width:1200px;
+    padding: 0 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
+    transition: all 1s ease;
+    
+}
+
+#home{color: #50ffcebf}
+
+@media(min-width:1003px){
+    .first{
+        width:100%;
+        height:80px; 
+        background:#005664c7;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position:sticky;
+        top:1px;
+        z-index:2
+    }
+    
+    .first .headline{
+        align-items: center;
+        font-size:30px;
+        font-family: 'Big Shoulders Stencil Text', cursive;
+        display:flex;
+        width:22%;
+        color:white;
+        padding:15px;
+    }
+    
+    .first .headline .firstphoto{height:57px;display:flex;}
+    
+    .first .headline .firstphoto img{width:101px;height:59px;border-radius: 20px;margin:0 0 0 6px;}
+    
+    .first .more{display:flex;width:50%;justify-content: center;padding:0 0 0 20px}
+    
+    .btn-group{overflow: hidden;width:0px;height:0px;position: absolute;}
+
+    .first .more ul{
+        display:flex;
+        width: 85%;
+        list-style:none;
+        flex-wrap:wrap;
+        height:100%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0PX;
+        transition:all 0.5s ease-in-out
+    }
+    
+    .first .more ul li{
+        font-size:20px;
+        color:black;
+        transition:all 0.2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        background-color: #04214987;
+        padding :10px;
+        border-radius: 12px;
+        transition:all 0.5s ease-in-out
+    }
+    
+    .first .more ul li a{
+        text-decoration:none;
+        color:white;
+        transition:all 0.5s ease-in-out ;
+    }
+
+    .first .more ul :hover {
+    background-color: black;
+    transition:all 0.2s ease-in-out ;
+    }
+
+    .first .order{
+        width:28%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .first .order .icons{
+        width: 39%;
+        font-size: 30px;
+    }
+    
+    .first .order .icons i{
+        font-size: 21px;
+        opacity:0.6 ;
+        padding:0 0px 0 5px;
+        transition: all ease 1s;
+        color:white;
+    }
+
+    .first .order .icons i:hover{
+        color: #50ffcebf;
+        transition: all ease 1s;
+    }
+
+    .first .order .orderr{
+        margin-left: -4px
+    }
+
+    .first .order button{
+        background-color: #04214987;
+        font-size: 24px;
+        border-radius: 15px;
+        color: white;
+        border: 1px solid black;
+        padding: 14px 38px;
+        transition: all ease 0.5s;
+    }
+
+    .first .order button a{
+
+        color: white;
+        text-decoration: none;
+    }
+    
+    .first .order button:hover{
+        background-color: black;
+        transition: all ease 0.5s;
+    }
+    
+    .first .more ul li a:active{color:yellowgreen}
+    
+
+    .middle-lite{width:0px;overflow: hidden;position: absolute;}
+
+    .container{
+        width:100%;
+        display: flex;
+        height:700px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
+        transition: all 1s ease;
+        background-color: #cfdac8;
+        background: url("../imgs/wp1933134.jpg") no-repeat fixed;
+        background-size: 100% 100%; 
+    }
+
+    .container .text{
+        width:1200px;
+        padding: 0 2%;
+    }
+
+    .text .order button{
+        background-color: #294a61;
+        font-size: 24px;
+        border-radius: 15px;
+        color: white;
+        border: 1px solid black;
+        padding: 14px 38px;
+        transition: all ease 0.5s;
+        margin-top: 20px;
+    }
+
+    .container .order button a{
+
+        color: white;
+        text-decoration: none;
+    }
+    
+    .text .order button:hover{
+        background-color: black;
+        transition: all ease 0.5s;
+    }
+
+    .container .text .title{
+        font-size: 30px;
+        padding-bottom: 30px;
+        margin-top:-30px ;
+        color:white;
+    }
+
+    .container .text .session{
+        font-size: 24px;
+        line-height: 30px;
+        width:55%;
+        color:#bfc7ca;
+        font-family: 'Alkatra', cursive;
+    }
+
+    .text .circle{
+        display: inline-flex;
+    }
+    
+    .text .circle .cir1 ,
+    .text .circle .cir2 ,
+    .text .circle .cir3 {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: aliceblue;
+        margin: 30px 5px;
+        animation: circle1 3s ease 0s infinite reverse backwards;
+    }
+
+    .text .circle .cir2 {
+        animation: circle2 3s ease 1s infinite reverse backwards;
+    }
+
+    .text .circle .cir3 {
+        animation: circle3 3s ease 2s infinite reverse backwards;
+    }
+
+    @keyframes circle1{
+        0%{background-color: white;}
+        50%{background-color: #2d737ac2;}
+        100%{background-color: white;}
+    }
+
+    @keyframes circle2{
+        0%{background-color: white;}
+        50%{background-color: #2d737ac2;}
+        100%{background-color: white;}
+    }
+    
+    @keyframes circle3{
+        0%{background-color: white;}
+        50%{background-color: #2d737ac2;}
+        100%{background-color: white;}
+    }
+    
+
+    .middle{
+    width:100%;
+    height:330px;
+    padding:40px 0 40px 0;
+    background-color: #bfc7ca;
+    display:flex;
+    justify-content:space-around;
+    align-content: space-around;
+    flex-wrap:wrap;
+    }
+    
+
+    .middle .birthday ,.middle .childrens {
+        width: 500px;
+        height: 250px;
+        background-color: rgb(55 129 140);
+        border-radius: 60px;
+        transition: all 0.6s ease-in-out;
+        margin-top: 20px;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .middle .birthday img , .middle .childrens img{
+        width:50%;
+        height:100%;
+        border-top-left-radius: 60px;
+        border-bottom-left-radius:60px ;
+    }
+
+    .childrens .details ,
+     .birthday .details{
+        width: 50%;
+        display: grid;
+        align-items: baseline;
+    }
+
+    .birthday .details .row ,
+    .childrens .details .row{
+    font-size: 61px;
+    text-align: center;
+    color: rgb(3 50 77);
+    transition: all ease 0.5s;
+    }
+
+    .birthday .details .row:hover ,
+    .childrens .details .row:hover{
+        color: black;
+        transition: all ease 0.5s;
+    }
+    
+    .middle .birthday .comment , .middle .childrens .comment{
+        text-align: center;
+        width: 200px;
+        background-color: rgb(3 50 77 / 72%);
+        border-radius: 80px;
+        margin: 61.5px 17px 0px 17px;
+        padding: 14px 0px;
+        font-size: 22px;
+        color: white;
+        border-radius: 27px;
+    }
+    
+    .end{
+    width:100%;
+    height:300px;
+    background-color: #08363bba;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .end  i{
+        color:#c4c4c4;
+    }
+    
+    .end .contact{
+    width:100%;
+    height:100%;
+    }
+    
+    .end .contact h2{padding:20px 0 0 25px;color:rgb(163, 163, 163)}
+    
+    .end .contact p{padding:20px 0 0 25px;font-size:19px;color:rgb(163, 163, 163)}
+    
+    .end .contact span{font-weight:bold}
+    }
+
+/*******************************************************************************************************/
+/*******************************************************************************************************/
+@media(max-width:1003px){
+
+    .contain {
+        width: 1200px;
+        padding: 0px 3%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        grid-template-columns: c;
+        transition: all 1s ease;
+    }
+
+    .first{
+        width: 100%;
+        height: 80px;
+        background: #005664c7;
+        display: flex;
+        position: sticky;
+        top: 1px;
+        z-index: 2;
+    }
+    
+    .first .headline{
+        align-items: center;
+        font-size: 30px;
+        font-family: 'Big Shoulders Stencil Text', cursive;
+        display: flex;
+        width: 17%;
+        color: white;
+    }
+    
+    .first .headline .firstphoto{height:57px;display:flex;}
+    
+    .first .headline .firstphoto img{width:0px;height:59px;border-radius: 20px;margin:0 0 0 0px;}
+    
+    .first .more{display:flex;width:53%;justify-content: flex-start}
+    
+    .btn-group{overflow: hidden;width:0px;height:0px;position: absolute;}
+    
+    .first .more ul{
+        display: flex;
+        width: 100%;
+        list-style: none;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0PX;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .first .more ul li{
+        font-size: 20px;
+        color: black;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        background-color: #04214987;
+        padding: 10px;
+        border-radius: 12px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .first .more ul li a{
+        text-decoration:none;
+        color:white;
+        transition:all 0.5s ease-in-out ;
+    }
+
+    .first .more ul :hover {
+    background-color: black;
+    transition:all 0.2s ease-in-out ;
+    }
+
+    .first .order{
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .first .order .icons{
+        width: 45%;
+        font-size: 26px;
+    }
+    
+    .first .order .icons i{
+        font-size: 21px;
+        opacity:0.6 ;
+        padding:0 0px 0 5px;
+        transition: all ease 1s;
+        color:white;
+    }
+
+    .first .order .icons i:hover{
+        color: #50ffcebf;
+        transition: all ease 1s;
+    }
+
+    .first .order .orderr{
+        margin-left: -4px
+    }
+
+    .first .order button{
+        background-color: #04214987;
+        font-size: 24px;
+        border-radius: 15px;
+        color: white;
+        border: 1px solid black;
+        padding: 12px 32px;
+        transition: all ease 0.5s;
+    }
+
+    .first .order button a{
+
+        color: white;
+        text-decoration: none;
+    }
+    
+    .first .order button:hover{
+        background-color: black;
+        transition: all ease 0.5s;
+    }
+        
+    .first .more ul li a:active{color:yellowgreen}
+    
+    .container{
+        width: 100%;
+        display: flex;
+        height: 818px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
+        transition: all 1s ease;
+        background-color: #cfdac8;
+        background: url(../imgs/wp1933134.jpg) no-repeat fixed;
+        background-size: 100% 100%;
+    }
+
+    .container .text{
+        width:1200px;
+        padding: 0 8%;
+    }
+
+    .text .order button{
+        background-color: #294a61;
+        font-size: 24px;
+        border-radius: 15px;
+        color: white;
+        border: 1px solid black;
+        padding: 14px 38px;
+        transition: all ease 0.5s;
+        margin-top: 20px;
+    }
+
+    
+    .container .order button a{
+
+        color: white;
+        text-decoration: none;
+    }
+    
+    .text .order button:hover{
+        background-color: black;
+        transition: all ease 0.5s;
+    }
+
+    .container .text .title{
+        font-size: 30px;
+        padding-bottom: 30px;
+        margin-top:-30px ;
+        color:white;
+    }
+
+    .container .text .session{
+        font-size: 24px;
+        line-height: 30px;
+        width:72%;
+        color:#bfc7ca;
+        font-family: 'Alkatra', cursive;
+    }
+
+    .text .circle{
+        display: inline-flex;
+    }
+    
+    .text .circle .cir1 ,
+    .text .circle .cir2 ,
+    .text .circle .cir3 {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: aliceblue;
+        margin: 30px 5px;
+        animation: circle1 3s ease 0s infinite reverse backwards;
+    }
+
+    .text .circle .cir2 {
+        animation: circle2 3s ease 1s infinite reverse backwards;
+    }
+
+    .text .circle .cir3 {
+        animation: circle3 3s ease 2s infinite reverse backwards;
+    }
+
+    @keyframes circle1{
+        0%{background-color: white;}
+        50%{background-color: #2d737ac2;}
+        100%{background-color: white;}
+    }
+
+    @keyframes circle2{
+        0%{background-color: white;}
+        50%{background-color: #2d737ac2;}
+        100%{background-color: white;}
+    }
+    
+    @keyframes circle3{
+        0%{background-color: white;}
+        50%{background-color: #2d737ac2;}
+        100%{background-color: white;}
+    }
+
+    .middle-lite{width:0px;overflow: hidden;position: absolute;}
+
+    .middle{
+        width:100%;
+        padding:40px 0 40px 0;
+        background-color: #bfc7ca;
+        display:flex;
+        justify-content:space-around;
+        align-content: space-around;
+        flex-wrap:wrap;
+        }
+        
+    
+        .middle .birthday ,.middle .childrens {
+            width: 660px;
+            height: 250px;
+            background-color: rgb(55 129 140);
+            border-radius: 60px;
+            transition: all 0.6s ease-in-out;
+            margin-top: 20px;
+            display: flex;
+            justify-content: right;
+        }
+        
+        .middle .birthday img , .middle .childrens img{
+            width:50%;
+            height:100%;
+            border-top-left-radius: 60px;
+            border-bottom-left-radius:60px ;
+        }
+    
+        .childrens .details ,
+        .birthday .details{
+            width: 50%;
+            display: grid;
+            align-items: baseline;
+        }
+    
+        .birthday .details .row ,
+        .childrens .details .row{
+        font-size: 61px;
+        text-align: center;
+        color: rgb(3 50 77);
+        transition: all ease 0.5s;
+        }
+    
+        .birthday .details .row:active ,
+        .childrens .details .row:active{
+            color: black;
+            transition: all ease 0.5s;
+        }
+
+        .birthday .details .row:hover ,
+        .childrens .details .row:hover{
+            color: black;
+            transition: all ease 0.5s;
+        }
+        
+        .middle .birthday .comment , .middle .childrens .comment{
+            text-align: center;
+            width: 200px;
+            background-color: rgb(3 50 77 / 72%);
+            border-radius: 80px;
+            margin: auto;
+            padding: 14px 0px;
+            font-size: 22px;
+            color: white;
+            border-radius: 27px;
+        }
+        
+        
+    
+    .end{width:100%;height:300px;background-color: #08363bba;text-align: center;display: flex;flex-wrap: wrap;}
+    
+    .end .contact{ width:100%;height:100%;}
+    
+    .end .contact h2{padding:20px 0 0 25px;color:rgb(163, 163, 163)}
+    
+    .end .contact p{padding:20px 0 0 25px;font-size:19px;color:rgb(163, 163, 163)}
+    
+    .end .contact span{font-weight:bold}
+
+    .end  i{color:#c4c4c4;}
+    }
+/********************************************************************************************************/
+/********************************************************************************************************/
+@media(max-width:760px){
+
+    .contain {
+        width: 1200px;
+        padding: 0px 10%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        grid-template-columns: c;
+        transition: all 1s ease;
+    }
+
+    .first{
+        width:100%;
+        height:80px; 
+        background:#005664c7;
+        display:flex;
+        position:sticky;
+        top:2px;
+        z-index:2
+    }
+    
+    .first .headline{
+        align-items: center;
+        font-size:30px;
+        font-family: 'Big Shoulders Stencil Text', cursive;
+        display:flex;
+        width:206px
+    }
+    
+    .first .headline .firstphoto{height:57px;display:flex;}
+    
+    .first .headline .firstphoto img{
+        width:101px;
+        height:59px;
+        border-radius: 20px;
+        margin:0 0 0 6px;
+    }
+    
+    .first .more{width:0;margin-left:7px;height:80px;overflow: hidden;padding:0}
+    
+    .button{
+        width:40%;
+        padding: 10px;
+        background-color: #7c9473;
+    }
+
+    .btn-group{overflow: visible;height:46px;position: static;width:155px}
+    .bottom{background-color: black;color: white;}
+    
+    .icon{
+        margin-left:10px ;
+    }
+
+    .icon i{
+        font-size: 21px;
+        opacity:0.6 ;
+        padding:0 0px 0 5px;
+        transition: all ease 1s;
+        color:white;
+    }
+
+    .first .more ul{
+        list-style:none;
+        float:left;
+        height:50px;
+        padding-top:5px;
+        margin:0px 0 0 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .first .more ul li{
+        margin:5px 30px 5px 17px;
+        font-size:24px;
+        color:white;
+        transition:all 0.2s ease-in-out;
+        width:84px;
+        height:30px;
+        display: flex;
+    }
+    
+
+    .first .more ul li a{text-decoration:none;color:white;transition:all 0.2s ease-in-out ;}
+    
+    .first .more ul :hover {
+        font-size: 29px;
+        background-color: black;
+        transition:all 0.2s ease-in-out ;
+        }
+        
+    
+    .first .more ul li a:active{color:yellowgreen}
+    
+    .contain .order{
+        width:0px;
+        overflow: hidden;
+    }
+
+    .container{
+        width:100%;
+        display: flex;
+        height:700px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
+        transition: all 1s ease;
+        background-color: #cfdac8;
+        background: url(../imgs/wp1933134.jpg) no-repeat fixed;
+        background-size: 100% 826px; 
+    }
+
+    .container .text{
+        width:1200px;
+        padding: 0 7%;
+    }
+
+    .text .order button{
+        background-color: #294a61;
+        font-size: 24px;
+        border-radius: 15px;
+        color: white;
+        border: 1px solid black;
+        padding: 14px 38px;
+        transition: all ease 0.5s;
+        margin-top: 20px;
+    }
+
+    
+    .container .order button a{
+
+        color: white;
+        text-decoration: none;
+    }
+
+    .first .order button a{
+
+        color: white;
+        text-decoration: none;
+    }
+    
+    .text .order button:hover{
+        background-color: black;
+        transition: all ease 0.5s;
+    }
+
+    .container .text .title{
+        font-size: 30px;
+        padding-bottom: 30px;
+        margin-top:-30px ;
+        color:white;
+    }
+
+    .container .text .session{
+        font-size: 20px;
+        line-height: 30px;
+        width:62%;
+        color:#bfc7ca;
+        font-family: 'Alkatra', cursive;
+
+    }
+
+
+    .middle-lite{width:0px;overflow: hidden;position: absolute;}
+
+
+    .middle{
+        width: 100%;
+        padding: 34px 0% 45px 0%;
+        background-color: #cfdac8;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #bfc7ca;
+}
+
+    .middle .birthday ,.middle .childrens {
+        width: 85%;
+        height: 250px;
+        background-color: rgb(55 129 140);
+        border-radius: 60px;
+        transition: all 0.6s ease-in-out;
+        margin-top: 20px;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .middle .birthday img , .middle .childrens img{
+        width:50%;
+        height:100%;
+        border-top-left-radius: 60px;
+        border-bottom-left-radius:60px ;
+    }
+
+    .childrens .details ,
+    .birthday .details{
+        width: 50%;
+        display: grid;
+        align-items: baseline;
+    }
+
+    .birthday .details .row ,
+    .childrens .details .row{
+    font-size: 61px;
+    text-align: center;
+    color: rgb(3 50 77);
+    transition: all ease 0.5s;
+    }
+
+    .birthday .details .row:active ,
+    .childrens .details .row:active{
+        color: black;
+        transition: all ease 0.5s;
+    }
+
+    .birthday .details .row:hover ,
+    .childrens .details .row:hover{
+        color: black;
+        transition: all ease 0.5s;
+    }
+    
+    .middle .birthday .comment , .middle .childrens .comment{
+        text-align: center;
+        width: 200px;
+        background-color: rgb(3 50 77 / 72%);
+        border-radius: 80px;
+        margin: auto;
+        padding: 14px 0px;
+        font-size: 22px;
+        color: white;
+        border-radius: 27px;
+    }
+    
+    
+    .end{width:100%;height:300px;background-color: #08363bba;text-align: center;display: flex;flex-wrap: wrap}
+    
+    .end .contact{ width:100%;height:100%;}
+    
+    .end .contact h2{padding:20px 0 0 25px;color:rgb(163, 163, 163)}
+    
+    .end .contact p{padding:20px 0 0 25px;font-size:19px;color:rgb(163, 163, 163)}
+    
+    .end .contact span{font-weight:bold}
+
+    .end  i{color:#c4c4c4;}
+}
+/********************************************************************************************************/
+/********************************************************************************************************/
+@media(max-width:512px){
+
+    body{background-color: rgba(16, 16, 16, 0.73);}
+    
+    .contain {
+        width: 1200px;
+        padding-left: 24px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        grid-template-columns: c;
+        transition: all 1s ease;
+    }
+
+    .first{
+        width:100%;
+        height:80px; 
+        background:#005664c7;
+        display:flex;
+        position:sticky;
+        top:1px;
+        z-index:2
+    }
+    
+    .first .headline{
+        align-items: center;
+        font-size:30px;
+        font-family: 'Big Shoulders Stencil Text', cursive;
+        display:flex;
+        width:135px
+    }
+    
+    .first .headline .firstphoto{height:57px;display:flex;}
+    
+    .first .headline .firstphoto img{
+        width:0px;
+        height:59px;
+        border-radius: 20px;
+        margin:0 0 0 0px;
+    }
+    
+    .first .more{width:0;margin-left:7px;height:80px;overflow: hidden;padding:0}
+    
+    .button{
+        width:40%;
+        padding: 10px;
+        background-color: #7c9473;
+    }
+
+    .btn-group{overflow: visible;height: 36px;position: static;width:155px}
+    .bottom{background-color: black;color: white;}
+    
+    .icon{
+        margin-left:10px ;
+    }
+
+    .icon i{
+        font-size: 21px;
+        opacity:0.6 ;
+        padding:0 0px 0 5px;
+        transition: all ease 1s;
+        color:white;
+    }
+
+    .first .more ul{
+        list-style:none;
+        float:left;
+        height:50px;
+        padding-top:5px;
+        margin:0px 0 0 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .first .more ul li{
+        margin:5px 30px 5px 17px;
+        font-size:24px;
+        color:white;
+        transition:all 0.2s ease-in-out;
+        width:84px;
+        height:30px;
+        display: flex;
+    }
+    
+
+    .first .more ul li a{text-decoration:none;color:white;transition:all 0.2s ease-in-out ;}
+    
+    .first .more ul :hover {
+        font-size: 29px;
+        background-color: black;
+        transition:all 0.2s ease-in-out ;
+        }
+        
+    
+    .first .more ul li a:active{color:yellowgreen}
+    
+    .contain .order{
+        width:0px;
+        overflow: hidden;
+    }
+
+    .container{
+        width: 100%;
+        display: flex;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
+        transition: all 1s ease;
+        background-color: #cfdac8;
+        background: url(../imgs/wp1933134.jpg) no-repeat fixed;
+        background-size: 100% 683px;
+    }
+
+    
+    .container .order button a{
+
+        color: white;
+        text-decoration: none;
+    }
+
+    .container .text{
+        width:1200px;
+        padding:0 7%;
+        margin-top:90px;
+    }
+
+    .text .order button{
+        background-color: #294a61;
+        font-size: 24px;
+        border-radius: 15px;
+        color: white;
+        border: 1px solid black;
+        padding: 14px 38px;
+        transition: all ease 0.5s;
+        margin-top: 20px;
+    }
+    
+    .text .order button:hover{
+        background-color: black;
+        transition: all ease 0.5s;
+    }
+
+    .container .text .title{
+        font-size: 30px;
+        padding-bottom: 17px;
+        margin-top: -88px;
+        color: white;
+    }
+
+    .container .text .session{
+        font-size: 17px;
+        line-height: 30px;
+        width:77%;
+        color:#9eb098;
+        font-family: 'Alkatra', cursive;
+
+    }
+
+
+    .middle-lite{
+        padding:20px 0 20px 0 ;
+        width:100%;
+        position: relative;
+    background-color: #bfc7ca;} 
+
+
+    .carousel-inner img{width:100%;height:400px}
+    .icon-next:hover{font-size:60px;color:red}
+    .icon-prev:hover{font-size:60px;color:red}
+    .carousel-caption  a{
+        margin:0 0 0px 0;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.663);
+        font-family: 'Big Shoulders Stencil Text', cursive;
+        font-weight: bold;
+        padding:8px 20px 9px 20px;
+        color:rgb(143, 143, 143);
+        border-radius: 13px;
+        display:flex;
+        text-align:center;
+        margin:auto
+    }
+
+    .carousel-caption a:hover{transform: translatex(20px);transition:all .54s ease-in-out;background-color:red}
+
+    .middle{
+    width:0%;
+    height:0px;
+    padding:142px 0 95px 0;
+    background-color: #cfdac8;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    position:absolute;
+    display:hidden
+    }
+
+    .middle i{
+        font-size: 0px;
+    }
+    
+    .middle .birthday ,.middle .childrens {
+    width:0px;
+    height:0px;
+    display:hidden;
+    background-color: rgb(106, 136, 118);
+    border-radius: 60px;
+    transition:all 0.6s ease-in-out ;
+    margin:0 0 10px 0
+    }
+    .middle .birthday img , .middle .childrens img{width:100%;height:100%;border-radius:60px ;}
+    
+    .middle .birthday .comment , .middle .childrens .comment{
+    position: absolute;
+    text-align:center;
+    width:0px;
+    margin:2.5px 0 0 120px ;
+    padding:0px;
+    font-size:0px;
+    color:rgb(46, 168, 162);
+    z-index:1;
+    }
+    .middle .childrens .comment{width:0px;display:hidden}
+
+
+    .middle .childrens:hover{width:513px;transition:all 0.6s ease-in-out }
+    
+    .middle .birthday:hover{width:513px;transition:all 0.6s ease-in-out }
+    
+    
+    .end{width:100%;height:300px;background-color:#08363bba ;display: flex;text-align: center;}
+    
+    .end .contact{ width:100%;height:100%;}
+    
+    .end .contact h2{padding:20px 0 0 0px;color:rgb(163, 163, 163)}
+    
+    .end .contact p,.end .contact .communication{padding:10px 10px 0 10px;font-size:19px;color:rgb(163, 163, 163)}
+    
+    .end .contact span{font-weight:bold}
+
+    .end  i{color:#c4c4c4;}
+}
